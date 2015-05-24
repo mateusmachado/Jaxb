@@ -7,6 +7,7 @@ public class Conta {
 
 	private double saldo;
 	private double limite;
+	private Cliente cliente;
 	
 	
 	public double getSaldo() {
