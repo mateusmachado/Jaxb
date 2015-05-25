@@ -23,5 +23,12 @@ public class Conta {
 		this.limite = limite;
 	}
 	
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
 	
 }

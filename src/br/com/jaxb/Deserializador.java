@@ -16,6 +16,7 @@ public class Deserializador {
 
 		System.out.println(conta.getLimite());
 		System.out.println(conta.getSaldo());
+		System.out.println(conta.getCliente().getNome());
 
 	}
 }

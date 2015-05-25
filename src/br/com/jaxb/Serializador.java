@@ -13,9 +13,13 @@ public class Serializador {
 		JAXBContext context = JAXBContext.newInstance(Conta.class);
 		Marshaller marshaller = context.createMarshaller();
 
+		Cliente cliente = new Cliente();
+		cliente.setNome("Mateus Machado");
+		
 		Conta conta = new Conta();
 		conta.setLimite(2000);
 		conta.setSaldo(2000);
+		conta.setCliente(cliente);
 		marshaller.marshal(conta, new File("conta.xml"));
 	}
 }
